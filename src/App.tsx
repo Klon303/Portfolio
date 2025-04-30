@@ -1,6 +1,6 @@
 import './App.css'
 import styled from "styled-components";
-import { Header } from './layout/header/header';
+import { Header } from './layout/header/Header';
 
 function App() {
     return (
@@ -11,4 +11,3 @@ function App() {
 }
 
 export default App
-
