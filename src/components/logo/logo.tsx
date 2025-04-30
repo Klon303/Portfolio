@@ -1,4 +1,3 @@
-import React from 'react';
 import { Icons } from '../icons/icons';
 
 export const Logo = () => {
