@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Project } from "../../components/project";
+import { Project } from "../../components/Project";
 import {SectionTitle } from "../../components/SectionTitle"
 import { FlexWrapper } from "../../components/FlexWrapper";
 
@@ -18,8 +18,7 @@ export const Projects = () => {
     );
 }
 
-const ProjectsWrapper= styled.div`
-`
+
 const ProjectsSection= styled.div`
 `
 

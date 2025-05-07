@@ -1,14 +1,18 @@
 import { Icons } from './icons';
-import { FlexWrapper } from '../FlexWrapper';
+import styled from 'styled-components';
 
-const IconBar = () => {
+export const IconBar = () => {
     return (
-        <FlexWrapper>
-            <Icons iconsId={"Telegramm"} />
-            <Icons iconsId={"Linkedin"} />
-            <Icons iconsId={"Github"} />
-        </FlexWrapper>
+            <SocialIconList>
+               <SocialIconlink href="#"> <Icons iconsId={"Github"} /></SocialIconlink>
+                <SocialIconlink href="#"> <Icons iconsId={"Linkedin"} /></SocialIconlink>
+                <SocialIconlink href="#"> <Icons iconsId={"Telegramm"} /></SocialIconlink>
+            </SocialIconList>
     );
 }
 
-export default IconBar;
+const SocialIconList =styled.ul`
+`
+
+const SocialIconlink =styled.a`
+`
