@@ -1,22 +1,29 @@
-import './App.css'
-import { Footer } from './layout/footer/footer';
-import { Header } from './layout/header/Header';
-import { Main } from './layout/sections/main';
-import { Projects } from './layout/sections/Projects';
-import { Skills } from './layout/sections/Skills';
-
-
+import { GoTopBtn } from "./components/goTopBtn/GoTopBtn";
+import { Particle } from "./components/particle/Particle";
+import { Footer } from "./layout/footer/Footer";
+import { Header } from "./layout/header/Header";
+import { Contact } from "./layout/sections/contacts/Contact";
+import { Main } from "./layout/sections/main/Main";
+import { Skills } from "./layout/sections/skills/Skills";
+import { Slogan } from "./layout/sections/slogan/Slogan";
+import { Feedback } from "./layout/sections/feedback/Feedback";
+import { Works } from "./layout/sections/works/Works";
 
 function App() {
-    return (
-        <div className="App">
-        <Header />
-        <Main />
-        <Projects />
-        <Skills />
-        <Footer />
-        </div>
-    )
+  return (
+    <div className="App">
+      <Particle />
+      <Header />
+      <Main />
+      <Skills />
+      <Works />
+      <Feedback />
+      <Contact />
+      <Slogan />
+      <Footer />
+      <GoTopBtn />
+    </div>
+  );
 }
 
-export default App
+export default App;

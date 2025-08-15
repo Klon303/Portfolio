@@ -1,11 +1,17 @@
-import { Icons } from '../icons/icons';
+import styled from "styled-components";
+import IconLogo from "./../../assets/images/Icon.svg";
+import { animateScroll as scroll } from "react-scroll";
+import { useCallback } from "react";
 
-export const Logo = () => {
-    return (
-           <a href="">
-            <Icons iconsId={"Logo"} width={"184px"} height={"35px"} viewBox={"0 0 185 48"} />
-            </a>  
-    );
-}
+export const Logo: React.FC = (props: any) => {
+  const onFollowLink = useCallback(() => {
+    scroll.scrollToTop();
+  }, []);
+  return (
+    <Link onClick={onFollowLink}>
+      <img src={IconLogo} alt="Logo" />
+    </Link>
+  );
+};
 
-
+const Link = styled.a``;
